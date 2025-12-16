@@ -1,0 +1,5 @@
+id INTEGER PRIMARY KEY AUTOINCREMENT
+metal TEXT
+price_usd REAL
+price_inr REAL
+timestamp TEXT
