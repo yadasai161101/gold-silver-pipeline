@@ -76,10 +76,6 @@ gold-silver-pipeline/
 │
 ├── .env                       # API keys & config
 ├── requirements.txt
-├── docker-compose.yml
-├── Dockerfile.pipeline
-├── Dockerfile.backend
-├── Dockerfile.dashboard
 └── README.md
 ```
 
@@ -195,32 +191,6 @@ python pipeline/fetch_prices.py
 * GitHub Actions (scheduled workflows)
 * Azure Functions / AWS Lambda
 * n8n workflows
-
----
-
-## 🐳 Dockerization
-
-### Build & Run Everything
-
-```bash
-docker compose up --build
-```
-
-### Services
-
-* **pipeline** → Fetches & stores prices
-* **backend** → Flask API
-* **dashboard** → Streamlit UI
-
-### Access
-
-* Backend: [http://localhost:5000](http://localhost:5000)
-* Dashboard: [http://localhost:8501](http://localhost:8501)
-
-### Persistent Volumes
-
-* Database (`data/`)
-* Logs (`logs/`)
 
 ---
 
